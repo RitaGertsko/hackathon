@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <!-- my css stylesheet -->
+    <link rel="stylesheet" href="./style.css">
+    <title>Hackathon: Tasks List</title>
+
+</head>
+
+<body>
+
+    <section>
+
+        <div id="containerFlex">
+            <div class="headersContainer">
+                <h1>Awesome Todo List</h1>
+                <h2>What do you need to do today?</h2>
+            </div>
+            
+            <form action="">
+                <div>
+                    <input type="text" name="text" id="textInput" value=" ">
+                </div>
+                <button type="submit" id="add-button">Add</button>
+            </form>
+
+            <ul id="list">
+            </ul>
+
+            <div class="secondaryContainer">
+                <div>
+                    <select name="timer" id="timer">
+                        <option value="0">No Alert</option>
+                        <option value="1">1 min</option>
+                        <option value="5">5 min</option>
+                        <option value="10">10 min</option>
+                    </select>
+                </div>
+                <button type="submit" class="bottom-buttons" id="clearAllButton">clear all completed tasks</button>
+                <button type="submit" class="bottom-buttons" id="deleteAllButton">delete all</button>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

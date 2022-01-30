@@ -1,0 +1,265 @@
+
+
+/* i want the text to be in the center */
+/* i want it to be responsive: flex or grid */
+
+html {
+    background: url("img.jpg") center no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+body{
+    height: 100vh;
+    font-size: 1.5em;
+    overflow: auto;
+}
+
+* {
+    font-family: 'Nunito', sans-serif;
+    text-transform: capitalize;
+}
+
+
+section {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#containerFlex{
+    height: 40%;
+    padding: 7% 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    overflow: hidden;
+    background: rgba(255, 255, 255,.67);
+    border-radius: 10%;
+}
+
+
+h1{
+    margin: 0;
+    padding: 1% 0 ;
+
+} 
+
+h2 {
+    margin: 0;
+    padding: 3% 0 ;
+    font-size: .8em;
+}
+
+
+.headersContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+form{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 1%;
+
+}
+
+#textInput{
+
+    width: 23rem;
+    height: 3rem;
+    border-radius: 12px;
+    border: 2px solid rgba(177, 0, 0, 0.63);
+}
+
+#add-button{
+    width: 7em;
+    color: white;
+    border-radius: 12px;
+    border: 2px solid rgba(0, 41, 0, 0.575);
+    font-weight: 700;
+    background: rgba(0, 95, 0, 0.651);
+}
+
+ul{
+    list-style-type: none;
+    padding: 2% 3% 29% 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow-x: hidden;
+    inline-size: 30rem; 
+    overflow-wrap: break-word;
+    word-break: break-all;
+    -ms-overflow-style: none;  /* IE and Edge */
+}
+
+ul::-webkit-scrollbar {
+    display: none; /* Safari and Opera */
+}
+
+hr {
+    width: 88%;
+    border-top: 2px solid rgba(201, 86, 255, 0.63);
+}
+
+
+.relative{
+    position: relative;
+}
+
+
+i {
+    font-size: .8em;
+    position: absolute;
+    left: 27rem;
+}
+
+i:hover, input[type='checkbox']:hover, button {
+    cursor: pointer;
+}
+
+.checkbox{
+    transform: scale(1.5);
+}
+
+
+.secondaryContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2%;    
+}
+
+#timer{
+    text-align: center;
+    font-size: .5em;
+    font-weight: 700;
+    width: 7em;
+    height: 4em;
+    padding: 1% 2%;
+    border-radius: 12px;
+    border: 1px solid rgba(177, 0, 0, 0.63);
+
+}
+
+
+.bottom-buttons{
+    font-size: .5em;
+    font-weight: 700;
+    width: 14.5em;
+    height: 4em;
+    padding: 1% 2%;
+    border-radius: 12px;
+    border: none;
+}
+
+#clearAllButton{
+    background-color: rgba(201, 86, 255, 0.63);
+    border: 2px solid rgba(143, 0, 209, 0.63);
+}
+
+#deleteAllButton{
+    background-color: rgba(177, 0, 0, 0.63);
+    border: 2px solid rgba(107, 1, 1, 0.63);
+}
+
+
+.cross-off{
+    text-decoration: line-through rgb(134, 134, 134) solid;
+    color: rgb(94, 93, 93);
+}
+
+
+
+
+@media screen and (max-device-width: 50em){
+   
+    #containerFlex{
+        height: 40rem;
+        width: fit-content;
+        
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    h2{
+        font-size: 1.6em;
+    }
+
+    #textInput{
+        width: 30rem;
+        height: 4rem;
+        padding: .3em 0;
+        font-size: 1.7em;
+    }
+
+    #add-button{
+        height: fit-content;
+        width: fit-content;
+        padding: .5em;
+        margin: .2em;
+        font-size: 1.4em;
+    }
+    
+    ul{
+        overflow: auto;
+        inline-size: 33rem; 
+    }
+
+    hr{
+        border-top: 4px solid rgba(201, 86, 255, 0.63);
+    }
+
+    i {
+        font-size: 1.6em;
+    }
+
+    .checkbox{
+        transform: scale(3);
+        padding: 5em;
+    }
+
+    span {
+        font-size: 1.9em;
+    }
+
+    #timer{
+        font-size: 1.3em;
+        width: fit-content;
+        height: 3em;
+        border: 1px solid rgba(177, 0, 0, 0.63);
+    }
+
+
+    .bottom-buttons{
+        font-size: 1.2em;
+        font-weight: 700;
+        width: fit-content;
+        height: fit-content;
+    }
+    
+    #clearAllButton{
+        background-color: rgba(201, 86, 255, 0.63);
+        border: 2px solid rgba(143, 0, 209, 0.63);
+    }
+
+    #deleteAllButton{
+        background-color: rgba(177, 0, 0, 0.63);
+        border: 2px solid rgba(107, 1, 1, 0.63);
+    }
+
+
+
+}
+
+
+
